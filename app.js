@@ -9,7 +9,7 @@ const passport = require('./Routes/Routes').passport;
 const app	= express();
 
 
-const DBuri = "mongodb://127.0.0.1:27017/App";// Ex: mongodb://127.0.0.1:27017/DB_Name
+const DBuri = "";// Ex: mongodb://127.0.0.1:27017/DB_Name
 
 mongoose.connect(DBuri,{
     useNewUrlParser: true,
