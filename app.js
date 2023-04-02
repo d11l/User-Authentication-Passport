@@ -19,6 +19,7 @@ mongoose.connect(DBuri,{
 
 const store = new DBsession({uri:DBuri , collection: "sessions"}) 
 
+app.use('/public', express.static('public'));
 app.set('view engine', 'ejs')
 
 app.use(express.urlencoded({ extended: true}));
